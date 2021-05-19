@@ -20,10 +20,12 @@ public class ServiceTest {
     Service service = new Service();
 @Before
 public void before() throws Exception {
+    System.out.print("开始测试");
 }
 
 @After
 public void after() throws Exception {
+    System.out.println("完成测试");
 }
 
 /**
@@ -33,6 +35,7 @@ public void after() throws Exception {
 */
 @Test
 public void testPlus() throws Exception {
+    System.out.println("加法的测试用例");
     for(int i = 0 ; i < 10 ;i++){
         int num1 = (int)(Math.random() * (-5000) + 2500) ;
         int num2 = (int)(Math.random() * (-5000) + 2500) ;
@@ -49,6 +52,7 @@ public void testPlus() throws Exception {
 @Test
 public void testMinus() throws Exception {
 //TODO: Test goes here...
+    System.out.println("减法的测试用例");
     for(int i = 0 ; i < 10 ;i++){
         int num1 = (int)(Math.random() * (-5000) + 2500) ;
         int num2 = (int)(Math.random() * (-5000) + 2500) ;
@@ -65,7 +69,7 @@ public void testMinus() throws Exception {
 @Test
 public void testTimes() throws Exception {
 //TODO: Test goes here...
-
+    System.out.println("乘法的测试用例");
     for(int i = 0 ; i < 10 ;i++){
         int num1 = (int)(Math.random() * (-5000) + 2500) ;
         int num2 = (int)(Math.random() * (-5000) + 2500) ;
@@ -82,7 +86,7 @@ public void testTimes() throws Exception {
 @Test
 public void testDivide() throws Exception {
 //TODO: Test goes here...
-
+    System.out.println("除法的测试用例");
     for(int i = 0 ; i < 10 ;i++){
         int num1 = (int)(Math.random() * (-5000) + 2500) ;
         int num2 = (int)(Math.random() * (-5000) + 2500) ;
