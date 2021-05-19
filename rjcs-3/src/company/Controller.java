@@ -5,7 +5,7 @@ public class Controller {
         Service service = new Service();
         int num1, num2;
         for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == '+' || str.charAt(i) == '-' || str.charAt(i) == '*' || str.charAt(i) == '/') {
+            if (str.charAt(i) == '+' || str.charAt(i) == '-' || str.charAt(i) == '*' || str.charAt(i) == '/' ) {
                 try {
                     num1 = Integer.parseInt(str.substring(0, i).trim());
                     num2 = Integer.parseInt(str.substring(i + 1).trim());
@@ -17,6 +17,8 @@ public class Controller {
                     System.out.println("input error");
                 }
                 break;
+            }else if(str.charAt(i) == ';'){
+                System.out.println("input error");
             }
         }
     }
