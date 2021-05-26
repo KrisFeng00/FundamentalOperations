@@ -2,6 +2,7 @@ package company;
 
 public class Controller {
     public void textCon(String str) {
+        str = str.trim();
         Service service = new Service();
         int num1, num2;
         char fm = ' ';
